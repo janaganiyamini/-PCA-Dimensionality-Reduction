@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 200 80% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 50% 92%;
+    --secondary-foreground: 160 40% 25%;
+
+    --muted: 210 15% 93%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 35 90% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 200 80% 45%;
+
+    --radius: 0.75rem;
+
+    --step-bg: 200 80% 96%;
+    --step-border: 200 60% 82%;
+    --code-bg: 220 20% 12%;
+    --code-foreground: 160 60% 70%;
+    --hint-bg: 35 90% 95%;
+    --hint-border: 35 70% 75%;
+    --question-bg: 280 40% 96%;
+    --question-border: 280 40% 80%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 210 20% 92%;
+    --card: 220 18% 14%;
+    --card-foreground: 210 20% 92%;
+    --popover: 220 18% 14%;
+    --popover-foreground: 210 20% 92%;
+    --primary: 200 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 30% 18%;
+    --secondary-foreground: 160 40% 80%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 215 15% 60%;
+    --accent: 35 80% 50%;
+    --accent-foreground: 35 90% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --ring: 200 80% 50%;
+    --step-bg: 200 30% 16%;
+    --step-border: 200 40% 30%;
+    --code-bg: 220 20% 8%;
+    --code-foreground: 160 60% 70%;
+    --hint-bg: 35 30% 16%;
+    --hint-border: 35 40% 30%;
+    --question-bg: 280 20% 16%;
+    --question-border: 280 30% 30%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
